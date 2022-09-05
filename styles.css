@@ -14,7 +14,7 @@ body {
   margin-right: auto;
   margin-top: 5%;
   height: auto;
-  max-width: 100px;
+  max-width: 115px;
 
   border-radius: 50%;
 }
@@ -74,5 +74,9 @@ body {
   font-size: 40px;
   color: white; 
   padding-left: 20px;
+  transition: 0.5s;
 }
 
+.fa-brands:hover, .fa-regular:hover{
+  font-size: 60px;
+}
