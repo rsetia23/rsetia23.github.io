@@ -70,13 +70,98 @@ body {
   margin-right: 20px;
 }
 
-.fa-brands, .fa-regular{
+.fa-brands, .fa-solid{
   font-size: 40px;
   color: white; 
   padding-left: 20px;
   transition: 0.5s;
 }
 
-.fa-brands:hover, .fa-regular:hover{
+.fa-brands:hover, .fa-solid:hover{
   font-size: 60px;
+}
+
+@media screen and (max-device-width: 700px) {
+  body {
+    background-color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 2px;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    height: auto;
+    max-width: 115px;
+  
+    border-radius: 50%;
+  }
+  
+  .profile-name {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+  }
+  
+  .links {
+    text-align: center;
+    margin-top: 20px;
+    /* border: 1px solid white; */
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgb(34, 34, 34);
+    /* transition: transform 0.3s ease; */
+  }
+  
+  .links {
+    text-decoration: none;
+    color: white;
+    /* transition: color 1s; */
+    transition: 0.5s;
+  }
+  
+  .links:hover {
+    background: var(--clr);
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 35px var(--clr);
+    /* color: blue; */
+  }
+  
+  .email {
+    color: white;
+    text-align: center; 
+    display: block;
+  }
+  
+  
+  .icons{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 13px; */
+    margin-right: 20px;
+  }
+  
+  .fa-brands, .fa-solid{
+    font-size: 40px;
+    color: white; 
+    padding-left: 20px;
+    transition: 0.5s;
+  }
+
+  .fa-brands:hover, .fa-solid:hover{
+    font-size: 40px;
+  }
 }
