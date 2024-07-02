@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39f528b2b7.js" crossorigin="anonymous"></script>
 
 
@@ -26,44 +27,51 @@
     />
     <link rel="manifest" href="favicon_io/site.webmanifest" />
 
-    <title>Rahul's Projects</title>
+    <title>Rahul's Portfolio</title>
   </head>
   <body>
-    <img class="profile-pic" src="images/Thing1.png" />
+ 
 
-    <div class="profile-name">Rahul Setia</div>    
+    <nav class="menu-bar">
+      <div class="name-top-left">
+        <div>Rahul</div>
+        <div>Setia</div>
+      </div>
+      <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#achievements">ACHIEVEMENTS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+      </ul>
+  </nav>
+
+    <div class="profile-container">
+      <div class="profile-info">
+          <div>
+            <div class="intro">Hello! I am</div>
+            <div class="name"><span id="typed-name"></span><span id="cursor">|</span></div>
+            <div class="title">Computer Science Student at Northeastern University</div>            
+          </div>
+          <div class="icons">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/rsetia23">
+                  <i class="fa-brands fa-github"></i>
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rahul-setia-169a28255">
+                  <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="mailto:rahulsetia2005@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>
+              </a>
+          </div>
+      </div>
+      <img class="profile-pic" src="images/Thing1.png" alt="Profile Picture">
+
+      <button id="light-mode-toggle" class="light-mode-toggle"><i class="fas fa-sun"></i></button>
+    <script src="script.js"></script>
+  </div>
   
-    <div class="icons">
-      <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/rsetia23"
-          > <i class="fa-brands fa-github"></i
-      ></a>
-
-      <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/rahul-setia-169a28255"
-          > <i class="fa-brands fa-linkedin"></i
-      ></a>
-
-      <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="mailto:rahulsetia2005@gmail.com"
-          > <i class="fa-solid fa-envelope"></i
-      ></a>
-
-      
-      
-      
-
-    </div>
-   
     
     
-
     <!-- <a
       class="links"
       style="--clr: #1e9bff"
@@ -71,16 +79,16 @@
       target="_blank"
     >
       <span>My Portfolio</span>
-    </a> -->
+    </a>
 
-    <!-- <a
+   <a
       class="links"
       style="--clr: #1e9bff"
       href="https://mineola-hall-of-fame-1.kdifede.repl.co"
       target="_blank"
     >
       <span>John S. DaVanzo Wall of Honor</span>
-    </a> -->
+    </a> 
 
     <a
       class="links"
@@ -107,8 +115,50 @@
       target="_blank"
     >
       <span>LA/Las Vegas Trip Website</span>
-    </a>
+    </a> -->
 
+    <section>
+      <h1 class="header">Experience</h1>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">
+            <h3>Object Oriented Design Stock Simulator (code available upon request)</h3>
+            <h4>Northeastern University</h4>
+            <p class="date">June 2024</p>
+          </div>
+          <div class="card-body">
+            <p>My partner and I created a stock simulator based off of historical data for the OOD class project.</p>
+            <a class="github-link" href="https://github.com/rsetia23/Stonks.git" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>John S. DaVanzo Wall Of Honor</h3>
+            <h4>Mineola High School</h4>
+            <p class="date">June 2022</p>
+          </div>
+          <div class="card-body">
+            <p>I helped create this website which honors the greater leaders of Mineola.</p>
+
+            <div class="multiple-icons">
+              <a class="github-link" href="https://x.com/mineolahs/status/1450779154673283072" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+  
+              <a class="github-link" href="" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </section>
    
   </body>
 </html>
