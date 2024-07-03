@@ -537,4 +537,9 @@ body.light-mode .links:hover {
     display: block;
     width: 100%; /* Full width for better clickability */
   }
+
+  /* Experience Section Mobile Styles */ 
+  .header {
+    font-size: 60px;
+  }
 }
