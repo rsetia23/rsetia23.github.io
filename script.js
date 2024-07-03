@@ -50,7 +50,69 @@ if (window.scrollY > offsetPosition) {
 // Listen for scroll events
 window.addEventListener('scroll', handleScroll);
 
-document.getElementById('hamburger').addEventListener('click', function() {
-  var menu = document.querySelector('.mobile-menu');
-  menu.classList.toggle('open');
+// document.getElementById('hamburger').addEventListener('click', function() {
+//   var menu = document.querySelector('.mobile-menu');
+//   menu.classList.toggle('open');
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.mobile-menu-bar button.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  // Toggle mobile menu
+  hamburger.addEventListener('click', function() {
+    // Toggle open class on hamburger button
+    hamburger.classList.toggle('open');
+    
+    // Toggle open class on mobile menu
+    mobileMenu.classList.toggle('open');
+
+    // Disable scrolling when the menu is open (optional)
+    document.body.classList.toggle('no-scroll');
+  });
+
+  // Close mobile menu when clicking outside the menu (optional)
+  document.addEventListener('click', function(event) {
+    const isClickInsideMenu = mobileMenu.contains(event.target);
+    const isClickOnHamburger = hamburger.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnHamburger && mobileMenu.classList.contains('open')) {
+      // Close the menu
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      
+      // Enable scrolling again
+      document.body.classList.remove('no-scroll');
+    }
+  });
+
+  // Close mobile menu when clicking a menu item (optional)
+  const menuItems = document.querySelectorAll('.mobile-menu a');
+  menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // Close the menu
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      
+      // Enable scrolling again
+      document.body.classList.remove('no-scroll');
+    });
+  });
 });
+
+
+
+  // Smooth scrolling function
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const sectionId = this.getAttribute('href').substring(1);
+      const section = document.getElementById(sectionId);
+
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
