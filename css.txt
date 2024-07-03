@@ -1,0 +1,51 @@
+@media screen and (max-width: 700px) {
+  .intro {
+    max-width: fit-content;
+    margin-left: auto;
+     margin-right: auto;
+  }
+
+  .name {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    margin-top: 10px; 
+    margin-right: 4%; 
+    white-space: wrap;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .profile-pic {
+    margin: 0 auto;
+  }
+
+  .profile-info {
+    margin-top: 20px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .hideOnMobile {
+    display: none; 
+  }
+
+  .svg-open-sidebar {
+    display: inline;
+  }
+
+  nav li:first-child {
+    margin-right: 45%;
+  }
+
+  
+}

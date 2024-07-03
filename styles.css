@@ -6,82 +6,40 @@ body {
   gap: 50px;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
-
-/* .profile-container {
-  display: flex;
-}
-
-.profile-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
-  margin-top: 5%;
-  height: auto;
-  max-width: 115px;
-
-  border-radius: 50%;
-}
-
-.profile-name {
-  color: white;
-  text-align: left;
-  padding: 10px;
-  font-size: 28px;
-} */
-
-/* .profile-container {
-  display: flex;
-  align-items: center;
-  margin-left: 100px; 
-
-} */
 
 .profile-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; /* Center the container horizontally */
-  max-width: 1200px; /* Adjust as per your design */
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-
-/* .profile-pic {
-  padding-left: 150px;
-} */
-
-/* 
 .profile-pic {
   border-radius: 50%;
-  margin-top: 100px; 
-  margin-left: 50%;
-  margin-right: 15%; 
-  border: 5px solid gray; 
-} */
-
-
-.profile-pic {
-  border-radius: 50%;
-  margin-left: 20%; /* Adjust as needed */
-  margin-top: 5%; 
-  width: 900px; /* Adjust size as per your design */
-  height: auto; /* Maintain aspect ratio */
-  border: 5px solid gray; 
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 900px;
+  height: auto;
+  border: 5px solid gray;
 }
 
 .name-top-left {
-  color: white; 
+  color: white;
   position: absolute;
-  top: 20px; /* Adjust as needed */
-  left: 100px; /* Adjust as needed */
+  top: 20px;
+  left: 100px;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  line-height: 1.2; /* Adjust as needed for spacing between first and last name */
+  line-height: 1.2;
 }
 
 .header {
-  color: white; 
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 70px;
   margin-top: 30%;
@@ -127,7 +85,7 @@ body {
 }
 
 .fa-link {
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
 .card-header h4 {
@@ -168,11 +126,8 @@ body {
   color: #ccc;
 }
 
-
-
-
 .intro {
-  background-color: green; 
+  background-color: green;
   color: white;
   padding: 5px 10px;
   border-radius: 20px;
@@ -181,7 +136,7 @@ body {
   font-weight: 600;
   width: fit-content;
   margin-bottom: 10px;
-  margin-left: 12.5%; 
+  margin-left: 12.5%;
 }
 
 .name {
@@ -189,14 +144,14 @@ body {
   font-size: 56px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  margin-bottom: 5px; 
-  margin-left: 12.5%; 
+  margin-bottom: 5px;
+  margin-left: 12.5%;
   white-space: nowrap;
 }
 
 .fab {
   font-size: 15px;
-  color: white; 
+  color: white;
 }
 
 @keyframes cursor-blink {
@@ -216,7 +171,6 @@ body {
   animation: cursor-blink 1s infinite;
 }
 
-
 .title {
   font-size: 25px;
   color: gray;
@@ -226,11 +180,9 @@ body {
   white-space: nowrap;
 }
 
-
 .links {
   text-align: center;
   margin-top: 20px;
-  /* border: 1px solid white; */
   width: 290px;
   display: block;
   margin-left: auto;
@@ -239,13 +191,6 @@ body {
   font-size: 18px;
   padding: 20px;
   background-color: rgb(34, 34, 34);
-  /* transition: transform 0.3s ease; */
-}
-
-.links {
-  text-decoration: none;
-  color: white;
-  /* transition: color 1s; */
   transition: 0.5s;
 }
 
@@ -253,40 +198,40 @@ body {
   background: var(--clr);
   letter-spacing: 0.2em;
   box-shadow: 0 0 35px var(--clr);
-  /* color: blue; */
 }
 
 .email {
   color: white;
-  text-align: center; 
+  text-align: center;
   display: block;
 }
 
-
 .icons {
-  display: flex; 
+  display: flex;
   align-items: left;
   justify-content: left;
   margin-right: 0px;
   margin-left: 12.5%;
   padding-left: 0px;
-  padding-top: 30px; 
+  padding-top: 30px;
 }
 
-.fa-brands, .fa-solid{
+.fa-brands, .fa-solid {
   font-size: 40px;
-  color: white; 
+  color: white;
   padding-left: 20px;
   transition: 0.5s;
 }
 
-.fa-brands:hover, .fa-solid:hover{
-  color: blue; 
+.fa-brands:hover, .fa-solid:hover {
+  color: blue;
 }
 
 .fa-github {
   padding-left: 0px;
 }
+
+/* Menu Bar Styling */
 
 .menu-bar {
   width: 100%;
@@ -303,9 +248,6 @@ body {
   background-color: black;
   transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out;
 }
-
-
-
 
 .menu-bar ul {
   list-style: none;
@@ -334,11 +276,11 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0; /* Adjust to position the underline */
-  height: 3px; /* Thickness of the underline */
-  background-color: white; /* Color of the underline */
+  bottom: 0;
+  height: 3px;
+  background-color: white;
   transform: scaleX(0);
-  transform-origin: left; /* Start the animation from the left */
+  transform-origin: left;
   transition: transform 0.3s ease;
 }
 
@@ -346,7 +288,54 @@ body {
   transform: scaleX(1);
 }
 
-/* Light Mode CSS */
+/* Mobile Menu Bar Styling */
+.mobile-menu-bar {
+  display: none;
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  left: 0;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: block;
+}
+
+/* Light Mode Styling */
 
 .light-mode-toggle {
   position: fixed;
@@ -363,7 +352,7 @@ body {
 }
 
 .light-mode-toggle i {
-  font-size: 20px; /* Size of the icon */
+  font-size: 20px;
 }
 
 .light-mode-toggle:hover {
@@ -372,7 +361,6 @@ body {
 
 body.light-mode {
   background-color: white;
-  /* color: white; */
 }
 
 body.light-mode .menu-bar a {
@@ -388,7 +376,7 @@ body.light-mode .intro {
 }
 
 body.light-mode .name-top-left {
-  color: black; 
+  color: black;
   z-index: 100;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
@@ -404,117 +392,149 @@ body.light-mode .name {
   margin-bottom: 5px;
 }
 
-body.light-mode .fa-brands, body.light-mode .fa-solid{
+body.light-mode .fa-brands, body.light-mode .fa-solid {
   font-size: 40px;
-  color: black; 
+  color: black;
   padding-left: 20px;
-  transition: 0.5s;
 }
 
-body.light-mode .fa-brands:hover, .fa-solid:hover{
-  color: blue; 
+body.light-mode .fa-brands:hover, body.light-mode .fa-solid:hover {
+  color: blue;
 }
 
 body.light-mode .fa-github {
   padding-left: 0px;
 }
 
-body.light-mode .menu-bar {
-  width: 100%;
-  padding: 10px;
-  position: relative;
+body.light-mode .icons {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-right: 0px;
+  margin-left: 12.5%;
+  padding-left: 0px;
+  padding-top: 30px;
 }
 
-body.light-mode .menu-bar.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  transition: top 0.3s ease-in-out;
+body.light-mode .links {
+  text-align: center;
+  margin-top: 20px;
+  width: 290px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  font-size: 18px;
+  padding: 20px;
+  background-color: rgb(34, 34, 34);
+  transition: 0.5s;
 }
 
-@media screen and (max-device-width: 700px) {
-  body {
-    background-color: black;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    letter-spacing: 2px;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .profile-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+body.light-mode .links:hover {
+  background: var(--clr);
+  letter-spacing: 0.2em;
+  box-shadow: 0 0 35px var(--clr);
+}
+
+@media screen and (max-width: 700px) {
+  .intro {
+    max-width: fit-content;
     margin-top: 5%;
-    height: auto;
-    max-width: 115px;
-  
-    border-radius: 50%;
-  }
-  
-  .profile-name {
-    color: white;
-    text-align: center;
-    padding: 30px;
-    font-size: 28px;
-  }
-  
-  .links {
-    text-align: center;
-    margin-top: 20px;
-    /* border: 1px solid white; */
-    width: 290px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 40px;
-    font-size: 18px;
-    padding: 20px;
-    background-color: rgb(34, 34, 34);
-    /* transition: transform 0.3s ease; */
-  }
-  
-  .links {
-    text-decoration: none;
-    color: white;
-    /* transition: color 1s; */
-    transition: 0.5s;
-  }
-  
-  .links:hover {
-    background: var(--clr);
-    letter-spacing: 0.2em;
-    box-shadow: 0 0 35px var(--clr);
-    /* color: blue; */
-  }
-  
-  .email {
-    color: white;
-    text-align: center; 
-    display: block;
-  }
-  
-  
-  .icons{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    /* margin: 0 13px; */
-    margin-right: 20px;
-  }
-  
-  .fa-brands, .fa-solid{
-    font-size: 40px;
-    color: white; 
-    padding-left: 20px;
-    transition: 0.5s;
   }
 
-  .fa-brands:hover, .fa-solid:hover{
-    font-size: 40px;
+  .name {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    margin-top: 10px; 
+    margin-right: auto;
+    margin-left: auto; 
+    white-space: wrap;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .profile-pic {
+    margin-top: 5%; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 200px; 
+  }
+
+  .profile-info {
+    margin-top: 20px;
+  }
+
+  .icons {
+    max-width: fit-content;
+    margin-left: auto;
+     margin-right: auto;
+  }
+
+  .name-top-left {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .desktop-menu-bar {
+    display: none;
+  }
+
+  .mobile-menu-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .hamburger {
+    font-size: 24px; /* Ensure the hamburger icon is easily clickable */
+    margin-right: 10%; 
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Hide off-screen */
+    width: 50%; /* Full width for better usability */
+    height: 100%;
+    background-color: black;
+    padding-top: 60px; /* Adjust as needed */
+    transition: left 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it is above other content */
+  }
+
+  .mobile-menu.open {
+    left: 0; /* Slide in from the left */
+  }
+
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%; /* Full width for better clickability */
   }
 }
