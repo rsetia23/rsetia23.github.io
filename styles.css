@@ -38,6 +38,7 @@ body {
   line-height: 1.2;
 }
 
+
 .header {
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -284,6 +285,14 @@ body {
   transition: transform 0.3s ease;
 }
 
+.name-top-left a::after {
+  height: 0; 
+}
+
+body.light-mode .menu-bar a::after {
+  background-color: black;
+}
+
 .menu-bar a:hover::after {
   transform: scaleX(1);
 }
@@ -504,6 +513,32 @@ body.light-mode .links:hover {
   box-shadow: 0 0 35px var(--clr);
 }
 
+
+body.light-mode .menu-bar.fixed {
+  background-color: white;
+}
+
+body.light-mode .mobile-menu-bar button.hamburger span {
+  background-color: black; 
+}
+
+body.light-mode .mobile-menu a {
+  color: black;
+}
+
+body.light-mode .mobile-menu.open {
+  left: 0; /* Slide in from the left */
+  background-color: white;
+}
+
+body.light-mode .mobile-menu {
+  background-color: white;
+}
+
+body.light-mode .header {
+  color: black; 
+}
+
 @media screen and (max-width: 700px) {
   .intro {
     max-width: fit-content;
@@ -542,10 +577,10 @@ body.light-mode .links:hover {
     margin-top: 20px;
   }
 
-  .icons {
+  .icons, body.light-mode .icons {
     max-width: fit-content;
     margin-left: auto;
-     margin-right: auto;
+    margin-right: auto;
   }
 
   .name-top-left {
@@ -613,5 +648,35 @@ body.light-mode .links:hover {
   /* Experience Section Mobile Styles */ 
   .header {
     font-size: 60px;
+  }
+
+  /* Light Mode Styling */
+  body.light-mode .menu-bar.fixed {
+    background-color: white;
+  }
+
+  body.light-mode .mobile-menu-bar button.hamburger span {
+    background-color: black; 
+  }
+
+  body.light-mode .mobile-menu a {
+    color: black;
+  }
+
+  body.light-mode .mobile-menu.open {
+    left: 0; /* Slide in from the left */
+    background-color: white;
+  }
+
+  body.light-mode .mobile-menu {
+    background-color: white;
+  }
+
+  body.light-mode .header {
+    color: black; 
+  }
+
+  .menu-bar a::after {
+    height: 0;
   }
 }
