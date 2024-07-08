@@ -257,6 +257,7 @@ body {
   width: 100%;
   padding: 10px;
   position: absolute;
+  z-index: 1000;
   transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out;
 }
 
@@ -587,6 +588,16 @@ body.light-mode .mobile-menu {
 body.light-mode .header {
   color: black; 
 }
+
+body.light-mode .header-with-underline::after {
+  background-color: black;
+}
+
+body.light-mode #about p {
+  color: black; 
+}
+
+
 
 @media screen and (max-width: 700px) {
   .intro {
