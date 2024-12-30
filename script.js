@@ -102,17 +102,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  // Smooth scrolling function
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+  // Select all the menu links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
-      const sectionId = this.getAttribute('href').substring(1);
-      const section = document.getElementById(sectionId);
+      // Get the target element
+      const target = document.querySelector(this.getAttribute('href'));
+      
+      // Get the header height
+      const headerHeight = document.querySelector('.menu-bar').offsetHeight;
 
+      // Scroll with an offset for the fixed header
       window.scrollTo({
-        top: section.offsetTop,
-        behavior: 'smooth'
+          top: target.offsetTop - headerHeight, // Adjust this offset as needed
+          behavior: 'smooth'
       });
-    });
   });
+});
