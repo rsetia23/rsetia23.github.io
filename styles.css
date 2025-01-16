@@ -95,7 +95,7 @@ body.light-mode #scroll-down span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1.5em;
   padding: 20px;
 }
 
@@ -104,8 +104,10 @@ body.light-mode #scroll-down span {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  width: 300px;
-  margin: 10px;
+  max-width: 300px;
+  flex: 1 1 calc(33.333% - 2rem);
+  box-sizing: border-box; 
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -158,6 +160,60 @@ body.light-mode #scroll-down span {
   font-size: 1rem;
   color: #ddd;
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+  
+}
+
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0; 
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0; 
+  width: 250px;
+  height: 100%; 
+  content: "";
+  z-index: 2;
+
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px; 
+  margin: 0 40px; 
+}
+
 
 .mutltiple-icons p:not(:first-child) {
   padding-left: 10px;
@@ -508,6 +564,7 @@ body.light-mode .menu-bar a::after {
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 3;
 }
 
 .light-mode-toggle i {
@@ -629,6 +686,13 @@ body.light-mode #about p {
   color: black; 
 }
 
+body.light-mode .logos:before {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+body.light-mode .logos:after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
 
 
 @media screen and (max-width: 700px) {
@@ -640,6 +704,23 @@ body.light-mode #about p {
     margin-left: auto;
     margin-right: auto;
   }
+  
+  .card-container {
+    flex-direction: column;
+  }
+
+  .logos:before, .logos:after {
+    background: transparent;
+  }
+
+  body.light-mode .logos:before {
+    background: transparent;
+  }
+
+  body.light-mode .logos:after {
+    background: transparent;
+  }
+
 
   .name {
     max-width: fit-content;
